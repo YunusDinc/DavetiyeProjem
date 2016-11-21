@@ -1,0 +1,50 @@
+﻿<!--FORM-->
+<div id="form">
+    <div class="container">
+        <h3>Rezervasyon</h3>
+        <div class="heart content-style"></div>
+
+        <div class="row">
+            <div class="col-md-3 rsvp-image"><img src="/Content/images/rsvp-left.png" alt="rsvp" /></div><!--end col-md-3-->
+            <div class="col-md-6">
+                <div class="contact-form">
+                    <form method="POST" id="contact-form" class="form-horizontal" action="contact-form.php" onSubmit="alert('Thank you for your feedback!');">
+                        <div class="form-group">
+                            <label>İsim Soyisim</label>
+                            <input class="form-control" type="text" name="name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input class="form-control" name="email" type="text" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label>Katılacak mısınız?</label><br />
+                            <input id="radio_1" type="radio" name="radio_group" value="yes">
+                            <label class="attending-text" for="radio_1">Evet, katılacağım.</label>
+                            <input id="radio_2" type="radio" name="radio_group" value="no">
+                            <label class="attending-text" for="radio_2">Hayır, gelemeyeceğim.</label>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Mesaj</label>
+                            <textarea class="form-control" name="message" rows="6" maxlength="1024" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button class="btn btn-default" type="reset">Temizle</button>
+                                <input type="hidden" name="save" value="contact-form">
+                                <button class="btn btn-success" id="submit" type="submit">Gönder</button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!--end contact-form-->
+            </div><!--end col-md-6-->
+            <div class="col-md-3 rsvp-image"><img src="/Content/images/rsvp-right.png" alt="rsvp" /></div><!--end col-md-3-->
+        </div><!--end row-->
+
+    </div><!--end container-->
+</div><!--end #form-->
+<!--END FORM-->
